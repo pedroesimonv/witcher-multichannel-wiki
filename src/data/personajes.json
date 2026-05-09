@@ -1,0 +1,38 @@
+[
+  {
+    "nombre": "Geralt de Rivia",
+    "especie": "Humano - Brujo",
+    "poder": 15,
+    "faccion": "Escuela del Lobo",
+    "descripcion": "Protagonista y cazador de monstruos modificado genéticamente. Aunque parece frío, posee un fuerte sentido de la justicia.",
+    "habilidades": ["Fuerza sobrehumana", "Señales mágicas", "Alquimia", "Reflejos mejorados"],
+    "imagen": "/media/personajes/Geralt-de-Rivia.webp"
+  },
+  {
+    "nombre": "Ciri",
+    "especie": "Humana - Sangre Ancestral",
+    "poder": 12,
+    "faccion": "Cintra / Reinos del Norte",
+    "descripcion": "Princesa de Cintra y legítima heredera del trono. Posee el poder de viajar entre mundos y tiempos.",
+    "habilidades": ["Teletransportación", "Espadachín experta", "Poderes ancestrales"],
+    "imagen": "/media/personajes/Ciri.webp"
+  },
+  {
+    "nombre": "Yennefer",
+    "especie": "Humana - Hechicera",
+    "poder": 10,
+    "faccion": "Logia de Hechiceras",
+    "descripcion": "Poderosa hechicera y el gran amor de Geralt. Es ambiciosa, independiente y protectora de los suyos.",
+    "habilidades": ["Magia avanzada", "Transformación", "Manipulación mental"],
+    "imagen": "/media/personajes/Yennefer.webp"
+  },
+  {
+    "nombre": "Jaskier",
+    "especie": "Humano",
+    "poder": 2,
+    "faccion": "Bardo",
+    "descripcion": "Famoso bardo y el mejor amigo de Geralt. Aporta humor y lírica a las oscuras aventuras del brujo.",
+    "habilidades": ["Talento musical", "Carisma extremo", "Astucia"],
+    "imagen": "/media/personajes/Jaskier.webp"
+  }
+]

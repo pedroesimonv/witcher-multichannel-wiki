@@ -1,0 +1,50 @@
+[
+  {
+    "tipo": "Primer Libro de Relatos",
+    "titulo": "El Último Deseo",
+    "resumen": "Una colección de relatos cortos que introduce a Geralt de Rivia, un brujo que caza monstruos por dinero. Los relatos están interconectados por una narrativa enmarcada.",
+    "importancia": "Presenta a los personajes principales como Geralt, Yennefer y Jaskier. Introduce el universo y establece la relación entre Geralt y Yennefer."
+  },
+  {
+    "tipo": "Segundo Libro de Relatos",
+    "titulo": "La Espada del Destino",
+    "resumen": "Segunda colección de relatos cortos. Explora más profundamente el mundo de Geralt y su relación con Ciri, una niña con un destino especial.",
+    "importancia": "Ciri es introducida como personaje crucial. Los relatos exploran su conexión con Geralt y los eventos que llevarán a la trama principal de la saga."
+  },
+  {
+    "tipo": "Primer Libro de la historia principal",
+    "titulo": "La Sangre de los Elfos",
+    "resumen": "Primera novela de la saga principal. Geralt toma a Ciri bajo su protección y la lleva a Kaer Morhen para entrenarla como brujo.",
+    "importancia": "La relación entre Geralt y Ciri se desarrolla mientras enfrentan amenazas tanto humanas como mágicas. Aparecen personajes clave como Triss Merigold."
+  },
+  {
+    "tipo": "Segundo Libro de la historia principal",
+    "titulo": "Tiempos de Odio",
+    "resumen": "Segunda novela de la saga principal. La guerra se intensifica y Ciri se encuentra atrapada en medio de la lucha por el poder.",
+    "importancia": "La novela expande la trama política y mágica del continente. Geralt, Yennefer y Ciri enfrentan desafíos que ponen a prueba sus lazos."
+  },
+  {
+    "tipo": "Tercer Libro de la historia principal",
+    "titulo": "Bautismo de Fuego",
+    "resumen": "Tercera novela de la saga principal. Geralt busca a Ciri, quien ha desaparecido. Conoce a nuevos aliados en su búsqueda.",
+    "importancia": "Geralt forma una compañía de amigos y aliados. La guerra continúa, y los conflictos se intensifican mientras se forman nuevas alianzas."
+  },
+  {
+    "tipo": "Cuarto Libro de la historia principal",
+    "titulo": "La Torre de la Golondrina",
+    "resumen": "Cuarta novela de la saga principal. Ciri intenta sobrevivir mientras es perseguida por enemigos.",
+    "importancia": "Ciri enfrenta sus propios desafíos. La narrativa alterna entre su perspectiva y la de Geralt. La historia se vuelve más oscura y compleja."
+  },
+  {
+    "tipo": "Quinto Libro de la historia principal",
+    "titulo": "La Dama del Lago",
+    "resumen": "Quinta y última novela de la saga principal. La historia de Geralt y Ciri llega a su clímax.",
+    "importancia": "Concluye la trama principal de la saga. Geralt, Yennefer y Ciri enfrentan sus destinos finales en una serie de eventos épicos y emotivos."
+  },
+  {
+    "tipo": "Tercer Libro de Relatos",
+    "titulo": "Estación de Tormentas",
+    "resumen": "Una novela independiente situada entre los relatos cortos de 'El último deseo'. Explora aventuras adicionales de Geralt.",
+    "importancia": "Proporciona más contexto y aventuras de Geralt. No afecta directamente la trama principal pero expande el universo para los fans."
+  }
+]

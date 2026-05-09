@@ -1,0 +1,17 @@
+/* src/style.css */
+@import "tailwindcss";
+
+@theme {
+  /* Colores inspirados en The Witcher */
+  --color-witcher-black: #0a0a0a;
+  --color-witcher-dark: #121212;
+  --color-witcher-red: #8b0000;
+  --color-witcher-silver: #d1d1d1;
+  
+  --font-serif: "Crimson Text", serif; /* Fuente épica para títulos */
+}
+
+/* Base de estilos */
+body {
+  @apply bg-witcher-black text-zinc-300 font-sans;
+}

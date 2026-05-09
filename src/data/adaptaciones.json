@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "categoria": "Series",
+    "titulo": "The Witcher (Netflix)",
+    "descripcion": "Serie de acción real protagonizada originalmente por Henry Cavill.",
+    "links": [
+      { "tag": "Filmaffinity", "url": "https://www.filmaffinity.com/es/film647070.html" },
+      { "tag": "Netflix", "url": "https://www.netflix.com/es/title/80189685" }
+    ]
+  },
+  {
+    "id": 2,
+    "categoria": "Series",
+    "titulo": "Wiedzmin (The Hexer)",
+    "descripcion": "La serie polaca original de 2002.",
+    "links": [
+      { "tag": "Filmaffinity", "url": "https://www.filmaffinity.com/es/film229007.html" }
+    ]
+  },
+  {
+    "id": 3,
+    "categoria": "Animación",
+    "titulo": "La pesadilla del lobo",
+    "descripcion": "Película de anime que narra el origen de Vesemir.",
+    "links": [
+      { "tag": "Netflix", "url": "https://www.netflix.com/title/81037868" }
+    ]
+  },
+  {
+    "id": 4,
+    "categoria": "Videojuegos",
+    "titulo": "The Witcher 3: Wild Hunt",
+    "descripcion": "Considerado uno de los mejores RPG de la historia.",
+    "links": [
+      { "tag": "Web Oficial", "url": "https://www.thewitcher.com/es/es/witcher3" }
+    ]
+  },
+  {
+    "id": 5,
+    "categoria": "Cortometrajes",
+    "titulo": "First Hunt",
+    "descripcion": "Cortometraje fan-made de gran calidad.",
+    "links": [
+      { "tag": "Dailymotion", "url": "https://www.dailymotion.com/video/x6e35w6" }
+    ]
+  }
+]
