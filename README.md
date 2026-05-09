@@ -1,13 +1,3 @@
----
-
-## ✒️ Autor
-
-*   **Pedro Simón** - *Refactorización y Desarrollo* - [Tu LinkedIn](www.linkedin.com/in/pedro-simon-8a3764171)
-
----
----
-
-
 # ⚔️ Witcher Saga - Modern Refactor
 
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -68,3 +58,11 @@ Este repositorio es la segunda iteración de la asignatura **Lenguajes de Marca*
 │   └── media/          # Assets optimizados (imágenes .webp)
 ├── index.html          # Punto de entrada principal
 └── vite.config.js      # Configuración del motor de compilación
+
+---
+
+## ✒️ Autor
+
+* **Pedro Simón** - *Refactorización y Desarrollo* - [LinkedIn](https://www.linkedin.com/in/pedro-simon-8a3764171)
+
+---
