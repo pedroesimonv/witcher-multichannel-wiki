@@ -16,12 +16,12 @@ async function cargarComponentes() {
   const footerContainer = document.querySelector('#footer-container');
 
   if (headerContainer) {
-    const resp = await fetch('/src/componentes/header.html');
+    const resp = await fetch('/componentes/header.html');
     headerContainer.innerHTML = await resp.text();
   }
 
   if (footerContainer) {
-    const resp = await fetch('/src/componentes/footer.html');
+    const resp = await fetch('/componentes/footer.html');
     footerContainer.innerHTML = await resp.text();
   }
 }
