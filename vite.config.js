@@ -14,6 +14,7 @@ export default defineConfig({
         adaptaciones: resolve(__dirname, 'adaptaciones.html'),
         autor: resolve(__dirname, 'autor.html'),
         contacto: resolve(__dirname, 'contacto.html'),
+        notFound: resolve(__dirname, '404.html'),
       },
     },
   },
