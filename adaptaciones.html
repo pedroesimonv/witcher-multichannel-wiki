@@ -1,33 +1,68 @@
-<body class="bg-zinc-950 text-zinc-300">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universo Expandido | The Witcher Wiki</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-zinc-950 text-zinc-300 min-h-screen flex flex-col font-sans antialiased selection:bg-red-900 selection:text-white">
 
-    <header id="navbar-container"></header>
+  <!-- Header Dinámico -->
+  <header id="navbar-container"></header>
 
-    <h1 class="text-5xl font-serif text-white uppercase tracking-tighter">
-      Universo <span class="text-red-700">Expandido</span>
-    </h1>
-    <p class="text-zinc-500 mt-4 max-w-2xl mx-auto">
-      De las páginas de Sapkowski a las pantallas de todo el mundo. Explora las series, películas y videojuegos que han dado vida a Geralt.
-    </p>
+  <!-- Contenido Principal -->
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+    
+    <!-- Encabezado de la Sección -->
+    <header class="text-center mb-16">
+      <h1 class="text-4xl sm:text-5xl font-serif text-white uppercase tracking-tighter">
+        Universo <span class="text-red-700">Expandido</span>
+      </h1>
+      <p class="text-zinc-500 mt-4 max-w-2xl mx-auto text-sm sm:text-base italic">
+        De las páginas de Sapkowski a las pantallas de todo el mundo. Explora las series, películas y videojuegos que han dado vida a Geralt.
+      </p>
+    </header>
 
-    <main class="max-w-7xl mx-auto px-6 py-12"></main>
+    <!-- Carrusel de Imágenes -->
+    <section class="swiper w-full h-[300px] sm:h-[500px] rounded-2xl overflow-hidden mb-20 shadow-2xl border border-zinc-800">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg-zinc-900">
+          <img 
+            src="/media/img1.webp" 
+            alt="Escena del universo de Geralt de Rivia" 
+            loading="lazy"
+            onerror="this.onerror=null; this.src='/favicon.svg'; this.classList.add('opacity-20', 'object-contain', 'p-8');"
+            class="w-full h-full object-cover"
+          >
+        </div>
+        <div class="swiper-slide bg-zinc-900">
+          <img 
+            src="/media/img2.webp" 
+            alt="Escena de la Cacería Salvaje" 
+            loading="lazy"
+            onerror="this.onerror=null; this.src='/favicon.svg'; this.classList.add('opacity-20', 'object-contain', 'p-8');"
+            class="w-full h-full object-cover"
+          >
+        </div>
+      </div>
+      <!-- Controles del Carrusel -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev !text-white"></div>
+      <div class="swiper-button-next !text-white"></div>
+    </section>
 
-<section class="swiper w-full h-[500px] rounded-2xl overflow-hidden mb-20 shadow-2xl">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="/media/img1.webp" class="w-full h-full object-cover" alt="Geralt"></div>
-      <div class="swiper-slide"><img src="/media/img2.webp" class="w-full h-full object-cover" alt="Wild Hunt"></div>
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev !text-white"></div>
-    <div class="swiper-button-next !text-white"></div>
-  </section>
+    <!-- Grid Dinámico de Adaptaciones -->
+    <section id="adaptaciones-grid"></section>
 
-  <section id="adaptaciones-grid"></section>
+  </main>
 
+  <!-- Footer Dinámico -->
+  <footer id="footer-container"></footer>
 
-
-        </main>
-
-    <footer id="footer-container"></footer>
-
-    <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/main.js"></script>
 </body>
+</html>

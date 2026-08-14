@@ -1,12 +1,77 @@
-<body class="bg-zinc-950 text-zinc-300">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Autor - Andrzej Sapkowski | The Witcher Wiki</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-zinc-950 text-zinc-300 min-h-screen flex flex-col font-sans antialiased selection:bg-red-900 selection:text-white">
 
-    <header id="navbar-container"></header>
+  <!-- Header Dinámico -->
+  <header id="navbar-container"></header>
 
-    <main>
-        //
-        </main>
+  <!-- Contenido Principal -->
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+    
+    <article class="flex flex-col lg:flex-row gap-12 items-center lg:items-start">
+      
+      <!-- Columna de la Imagen -->
+      <div class="w-full lg:w-1/3 relative group">
+        <div class="aspect-[3/4] rounded-xl overflow-hidden border-4 border-zinc-800 shadow-2xl relative">
+          <!-- Fondo base por si la imagen falla -->
+          <div class="absolute inset-0 bg-zinc-900"></div>
+          <!-- Imagen del autor con fallback -->
+          <img 
+            src="/media/sapkowski.webp" 
+            alt="Retrato de Andrzej Sapkowski" 
+            loading="lazy"
+            onerror="this.onerror=null; this.src='/favicon.svg'; this.classList.add('opacity-20', 'object-contain', 'p-8');"
+            class="absolute inset-0 w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700 z-10" 
+          />
+          <div class="absolute inset-0 border border-white/10 pointer-events-none z-20"></div>
+        </div>
+      </div>
 
-    <footer id="footer-container"></footer>
+      <!-- Columna del Texto (Biografía) -->
+      <div class="w-full lg:w-2/3 flex flex-col justify-center">
+        
+        <header class="mb-8 text-center lg:text-left">
+          <div class="inline-block bg-red-900/20 text-red-500 border border-red-900/50 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-[0.3em] mb-4">
+            El Creador
+          </div>
+          <h1 class="text-4xl sm:text-6xl font-serif text-white uppercase tracking-tighter mb-2">
+            Andrzej <span class="text-red-700">Sapkowski</span>
+          </h1>
+          <p class="text-zinc-500 italic text-sm sm:text-base">Nacido el 21 de junio de 1948 en Łódź, Polonia</p>
+        </header>
 
-    <script type="module" src="/src/main.js"></script>
+        <div class="space-y-6 text-zinc-400 text-sm sm:text-base leading-relaxed">
+          <p>
+            Antes de convertirse en uno de los escritores de fantasía más reconocidos del mundo, Sapkowski estudió economía y trabajó como representante de ventas senior para una empresa comercial extranjera. Su incursión en la literatura comenzó casi por accidente, como una forma de participar en un concurso de la revista polaca de ciencia ficción y fantasía, <em>Fantastyka</em>.
+          </p>
+          <p>
+            En 1986, envió un cuento corto titulado <strong>"Wiedźmin"</strong> (El Brujo). Aunque quedó en tercer lugar, la historia de Geralt de Rivia causó un gran impacto tanto en los lectores como en los críticos, sentando las bases para un universo que redefiniría la fantasía oscura europea.
+          </p>
+          <blockquote class="border-l-4 border-red-700 pl-4 py-2 my-6 bg-zinc-900/50 rounded-r text-zinc-300 italic font-serif">
+            "La fantasía es un marco en el que puedes colocar cualquier cosa, desde un romance hasta una historia sobre problemas sociales, y hacerla funcionar."
+          </blockquote>
+          <p>
+            Conocido por su estilo cínico, humor negro y la deconstrucción de los tropos de los cuentos de hadas tradicionales, Sapkowski ha sido galardonado con numerosos premios, incluido el prestigioso premio David Gemmell Legend. Su obra ha trascendido las páginas impresas, convirtiéndose en un fenómeno cultural global.
+          </p>
+        </div>
+
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Footer Dinámico -->
+  <footer id="footer-container"></footer>
+
+  <script type="module" src="/src/main.js"></script>
 </body>
+</html>

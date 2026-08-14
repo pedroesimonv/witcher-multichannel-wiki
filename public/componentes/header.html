@@ -1,14 +1,24 @@
-<nav class="bg-zinc-900/90 backdrop-blur-md border-b border-zinc-800 sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-    <div class="text-white font-serif text-xl tracking-tighter uppercase font-bold">
+<nav class="bg-zinc-900/90 backdrop-blur-md border-b border-zinc-800 sticky top-0 z-50 shadow-xl" aria-label="Navegación principal">
+  <!-- Contenedor ajustado con flex-wrap para soporte móvil -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 min-h-[5rem] py-4 md:py-0 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
+    
+    <!-- Logo / Enlace a Inicio -->
+    <a href="/index.html" class="text-white font-serif text-2xl tracking-tighter uppercase font-bold hover:scale-105 transition-transform" aria-label="Ir a la página de inicio">
       Witcher <span class="text-red-700">Saga</span>
-    </div>
-    <ul class="flex gap-8 text-sm font-medium uppercase tracking-widest">
-      <li><a href="/index.html" class="hover:text-red-600 transition-colors">Inicio</a></li>
-      <li><a href="/historia.html" class="hover:text-red-600 transition-colors">Historia</a></li>
-      <li><a href="/adaptaciones.html" class="hover:text-red-600 transition-colors">Adaptaciones</a></li>
-      <li><a href="/autor.html" class="hover:text-red-600 transition-colors">Autor</a></li>
-      <li><a href="/contacto.html" class="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-800 transition-all">Contacto</a></li>
+    </a>
+    
+    <!-- Enlaces de navegación -->
+    <ul class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 text-xs sm:text-sm font-medium uppercase tracking-widest text-zinc-300">
+      <li><a href="/index.html" class="hover:text-red-500 transition-colors">Inicio</a></li>
+      <li><a href="/historia.html" class="hover:text-red-500 transition-colors">Historia</a></li>
+      <li><a href="/adaptaciones.html" class="hover:text-red-500 transition-colors">Adaptaciones</a></li>
+      <li><a href="/autor.html" class="hover:text-red-500 transition-colors">Autor</a></li>
+      <li>
+        <a href="/contacto.html" class="bg-red-700 text-white px-5 py-2 md:px-4 md:py-2 rounded border border-red-600 hover:bg-red-800 hover:border-red-500 shadow-[0_0_10px_rgba(185,28,28,0.2)] hover:shadow-red-900/50 transition-all active:scale-95">
+          Contacto
+        </a>
+      </li>
     </ul>
+    
   </div>
 </nav>

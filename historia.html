@@ -1,29 +1,63 @@
-<body class="bg-zinc-950 text-zinc-300">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Historia y Libros | The Witcher Wiki</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-zinc-950 text-zinc-300 min-h-screen flex flex-col font-sans antialiased selection:bg-red-900 selection:text-white">
 
-    <header id="navbar-container"></header>
+  <!-- Header Dinámico -->
+  <header id="navbar-container"></header>
 
-    <main>
+  <!-- Contenido Principal -->
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+    
+    <!-- Sección: Cronología de los Libros -->
+    <section class="mb-24">
+      <header class="text-center mb-12">
+        <h1 class="text-4xl sm:text-5xl font-serif text-white uppercase tracking-widest">
+          Cronología de las <span class="text-red-700">Novelas</span>
+        </h1>
+        <p class="text-zinc-500 mt-4 max-w-2xl mx-auto text-sm sm:text-base italic">
+          Descubre el orden de lectura de la obra original de Andrzej Sapkowski, desde los primeros cuentos cortos hasta la gran saga literaria.
+        </p>
+        <div class="h-1 w-24 bg-red-700 mx-auto mt-6 rounded"></div>
+      </header>
 
-        <h2 class="text-4xl font-serif text-white uppercase tracking-widest">Cronología de las Novelas</h2>
-    <div class="h-1 w-24 bg-witcher-red mx-auto mt-4"></div>
-  </header>
-
-  <section id="libros-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Contenedor inyectado dinámicamente desde renderers.js -->
+      <div id="libros-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Renderizado dinámico de libros -->
+      </div>
     </section>
 
-        <section class="max-w-7xl mx-auto px-6 py-20">
-  <div class="text-center mb-16">
-    <h2 class="text-4xl font-serif text-white uppercase tracking-[0.3em]">Personajes Principales</h2>
-    <p class="text-zinc-500 mt-2">Colección de cartas de leyenda</p>
-    <div class="h-1 w-20 bg-red-700 mx-auto mt-6"></div>
-  </div>
+    <!-- Sección: Personajes Principales -->
+    <section class="mb-12">
+      <header class="text-center mb-16">
+        <div class="inline-block bg-zinc-900 text-zinc-400 border border-zinc-800 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-[0.3em] mb-4">
+          Colección de Cartas
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-serif text-white uppercase tracking-[0.3em]">
+          Personajes Principales
+        </h2>
+        <div class="h-1 w-20 bg-red-700 mx-auto mt-6 rounded"></div>
+      </header>
 
-  <div id="personajes-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-    </div>
-</section>
-        </main>
+      <!-- Contenedor inyectado dinámicamente desde renderers.js -->
+      <div id="personajes-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <!-- Renderizado dinámico de personajes -->
+      </div>
+    </section>
 
-    <footer id="footer-container"></footer>
+  </main>
 
-    <script type="module" src="/src/main.js"></script>
+  <!-- Footer Dinámico -->
+  <footer id="footer-container"></footer>
+
+  <script type="module" src="/src/main.js"></script>
 </body>
+</html>
