@@ -1,21 +1,57 @@
-<body class="bg-zinc-950 text-zinc-300">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Witcher Saga | Crónicas del Continente</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-zinc-950 text-zinc-300 min-h-screen flex flex-col font-sans antialiased selection:bg-red-900 selection:text-white">
 
-    <header id="navbar-container"></header>
+  <!-- Header Dinámico -->
+  <header id="navbar-container"></header>
 
-    <main>
-      <section class="text-center mb-16">
-      <h1 class="text-5xl font-serif font-bold text-white mb-6 uppercase tracking-tighter">
+  <!-- Contenido Principal -->
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+    
+    <!-- Hero / Bienvenida -->
+    <section class="text-center mb-16 relative">
+      <div class="inline-block bg-red-900/20 text-red-500 border border-red-900/50 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-[0.3em] mb-4">
+        Crónicas del Lobo Blanco
+      </div>
+      <h1 class="text-4xl sm:text-6xl font-serif font-bold text-white mb-6 uppercase tracking-tighter">
         Bienvenido al mundo de <span class="text-red-600">Geralt de Rivia</span>
       </h1>
-      <div class="space-y-4 max-w-3xl mx-auto text-lg">
-        <p>Sumergete en el fascinante universo...</p>
-        </div>
+      <div class="space-y-4 max-w-3xl mx-auto text-base sm:text-lg text-zinc-400">
+        <p>
+          Sumérgete en el fascinante universo creado por Andrzej Sapkowski. Explora las sendas del Continente, sus criaturas legendarias y los secretos de la alquimia de los brujos.
+        </p>
+      </div>
     </section>
 
-    
-        </main>
+    <!-- Galería / Cartas de Personajes (Gwent) -->
+    <section class="mb-20">
+      <div class="flex items-center justify-between border-b border-zinc-800 pb-4 mb-8">
+        <div>
+          <span class="text-xs text-red-500 font-bold uppercase tracking-widest block">Baraja Legendaria</span>
+          <h2 class="text-2xl sm:text-3xl font-serif text-white uppercase">Personajes Principales</h2>
+        </div>
+      </div>
 
-    <footer id="footer-container"></footer>
+      <!-- Contenedor inyectado dinámicamente desde renderers.js -->
+      <div id="personajes-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Renderizado dinámico de cartas -->
+      </div>
+    </section>
 
-    <script type="module" src="/src/main.js"></script>
+  </main>
+
+  <!-- Footer Dinámico -->
+  <footer id="footer-container"></footer>
+
+  <script type="module" src="/src/main.js"></script>
 </body>
+</html>

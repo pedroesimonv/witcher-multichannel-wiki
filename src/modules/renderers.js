@@ -47,9 +47,19 @@ export function renderPersonajes() {
     container.innerHTML = personajesData.map(pj => `
       <div class="group relative aspect-[2/3] w-full max-w-[300px] mx-auto bg-zinc-900 border-4 border-zinc-800 rounded-xl overflow-hidden shadow-2xl hover:border-red-700 transition-all duration-500 hover:-translate-y-4">
         
-        <div class="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700" style="background-image: url('${pj.imagen || ''}')"></div>
+        <!-- Capa de fondo base por si la imagen tarda en cargar -->
+        <div class="absolute inset-0 bg-zinc-950"></div>
+
+        <!-- Etiqueta img optimizada con lazy loading y fallback (onerror) -->
+        <img 
+          src="${pj.imagen || '/favicon.svg'}" 
+          alt="Retrato del personaje: ${pj.nombre || 'Desconocido'}" 
+          loading="lazy"
+          onerror="this.onerror=null; this.src='/favicon.svg'; this.classList.add('opacity-20', 'object-contain', 'p-8');"
+          class="absolute inset-0 w-full h-full object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-700 z-0" 
+        />
         
-        <div class="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent"></div>
+        <div class="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent z-0"></div>
 
         <div class="absolute top-3 left-3 w-12 h-12 bg-red-800 border-2 border-zinc-200 rounded-full flex items-center justify-center shadow-lg z-20">
           <span class="text-white font-bold text-xl">${pj.poder ?? 0}</span>
@@ -67,7 +77,7 @@ export function renderPersonajes() {
           </div>
         </div>
 
-        <div class="absolute inset-0 border border-white/10 rounded-lg pointer-events-none"></div>
+        <div class="absolute inset-0 border border-white/10 rounded-lg pointer-events-none z-30"></div>
       </div>
     `).join('');
   } catch (error) {
