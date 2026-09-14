@@ -5,14 +5,13 @@
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 
-<!-- ESPACIO PARA EL HERO GIF (Demostración del carrusel Swiper.js y el diseño del Header dinámico) -->
 ![Hero Demo](/public/media/witcher-hero-demo.gif)
 *Arquitectura estática vitaminada: Carruseles táctiles e inyección de componentes globales.*
 
 > Evolución técnica de un proyecto académico hacia una arquitectura web moderna, modular y basada en datos. Esta wiki y portafolio interactivo rinde homenaje al universo de *The Witcher*, priorizando el rendimiento, la accesibilidad (WCAG) y la separación estricta entre la lógica de negocio y el contenido estático.
 
-## 📖 El Concepto y Refactorización (Legacy vs Modern)
-El objetivo de este proyecto fue erradicar la deuda técnica de una base de código rudimentaria (datos "quemados" en el HTML, CSS monolítico y falta de semántica) para construir un sistema escalable. El resultado es un motor de renderizado en Vanilla JavaScript que consume archivos JSON locales, eliminando la redundancia mediante inyección dinámica de componentes.
+## 📖 El Concepto y Refactorización
+El objetivo de este proyecto fue erradicar la deuda técnica de una base de código rudimentaria para construir un sistema escalable. El resultado es un motor de renderizado en Vanilla JavaScript que consume archivos JSON locales, eliminando la redundancia mediante inyección dinámica de componentes.
 
 ## 🚀 Características y UX (Features)
 
@@ -21,7 +20,6 @@ El objetivo de este proyecto fue erradicar la deuda técnica de una base de cód
 - **Streaming-Style Catalog:** Organización dinámica de adaptaciones (series, películas, videojuegos) implementando `Swiper.js` para navegación táctil fluida.
 - **Resiliencia Visual (Anti-CLS):** Implementación de *fallbacks* en el DOM (`onerror`) que inyectan *placeholders* automáticos si un *asset* falla, garantizando la estabilidad visual de la interfaz.
 
-<!-- ESPACIO PARA LA CAPTURA DE LAS CARTAS GWENT / TABLÓN DE CONTRATOS -->
 ![UI The Witcher](/public/media/witcher-gwent-ui.png)
 *Renderizado dinámico de tarjetas de personajes consumiendo datos desde JSON.*
 
